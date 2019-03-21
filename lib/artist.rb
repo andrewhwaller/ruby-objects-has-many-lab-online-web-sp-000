@@ -3,6 +3,10 @@ class Artist
 
   @@all = []
 
+  def self.all
+    @@all
+  end
+
   def initialize(name)
     @name = name
     @@all << self
@@ -20,4 +24,5 @@ class Artist
   def self.song_count
     Song.all.count
   end
+
 end
